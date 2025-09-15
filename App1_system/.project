@@ -4,7 +4,6 @@
 	<comment></comment>
 	<projects>
 		<project>App1</project>
-		<project>PF100_25</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

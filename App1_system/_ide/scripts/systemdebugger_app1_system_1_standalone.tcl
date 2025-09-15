@@ -16,7 +16,7 @@ after 3000
 targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351AF2506A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351AF2506A-13722093-0"}
 fpga -file C:/PoC/Hilbert_242/App1/_ide/bitstream/Hilbert_242_wrapper.bit
 targets -set -nocase -filter {name =~"APU*"}
-loadhw -hw C:/PoC/Hilbert242C/PF100_25/export/PF100_25/hw/Hilbert_242_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+loadhw -hw C:/PoC/Hilbert_242/PF10025/export/PF10025/hw/Hilbert_242_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
 configparams force-mem-access 1
 targets -set -nocase -filter {name =~"APU*"}
 source C:/PoC/Hilbert_242/App1/_ide/psinit/ps7_init.tcl

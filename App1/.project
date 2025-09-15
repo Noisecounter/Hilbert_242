@@ -3,6 +3,7 @@
 	<name>App1</name>
 	<comment>Created by Vitis v2024.2</comment>
 	<projects>
+		<project>PF10025</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
