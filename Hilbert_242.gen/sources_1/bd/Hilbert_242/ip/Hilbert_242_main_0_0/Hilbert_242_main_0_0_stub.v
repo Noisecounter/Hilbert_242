@@ -1,11 +1,11 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-// Date        : Mon Sep 15 15:09:57 2025
-// Host        : SNM_ProBook running 64-bit major release  (build 9200)
+// Tool Version: Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
+// Date        : Mon Sep 29 11:15:06 2025
+// Host        : mike-NH5xAx running 64-bit Ubuntu 24.04.2 LTS
 // Command     : write_verilog -force -mode synth_stub
-//               c:/PoC/Hilbert_242/Hilbert_242.gen/sources_1/bd/Hilbert_242/ip/Hilbert_242_main_0_0/Hilbert_242_main_0_0_stub.v
+//               /mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.gen/sources_1/bd/Hilbert_242/ip/Hilbert_242_main_0_0/Hilbert_242_main_0_0_stub.v
 // Design      : Hilbert_242_main_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z010clg400-1
