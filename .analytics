@@ -121,3 +121,14 @@ timestamp=[2025-09-15 15:26:37], mode=BUILD, duration=0:00:00.398, duration_ms=3
 timestamp=[2025-09-15 15:26:38], mode=BUILD, duration=0:00:00.278, duration_ms=278, data={name=App1_system, configuration=Debug, clean_build=true}
 timestamp=[2025-09-15 15:30:21], mode=BUILD, duration=0:00:01.652, duration_ms=1652, data={name=App1, configuration=Debug, clean_build=false}
 timestamp=[2025-09-15 15:30:30], mode=BUILD, duration=0:00:09.364, duration_ms=9364, data={name=App1_system, configuration=Debug, clean_build=false}
+timestamp=[2025-09-17 07:21:29], mode=WORKBENCH_START, duration=0:00:19.904, duration_ms=19904, data={}
+timestamp=[2025-09-17 07:21:32], mode=WORKBENCH_UI_INIT, duration=0:00:03.879, duration_ms=3879, data={editors_count=2, platform_editors_count=0, projects_count=7, platform_projects_count=1, active_platform_editor=false, projects=App1,App1_system,PF1,PF10025,PF2,PF3,RemoteSystemsTempFiles}
+timestamp=[2025-09-17 07:21:34], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.551, duration_ms=551, data={}
+timestamp=[2025-09-17 07:26:13], mode=PLATFORM_GENERATION, duration=0:00:46.405, duration_ms=46405, data={name=PF10025}
+timestamp=[2025-09-17 07:28:39], mode=PLATFORM_GENERATION, duration=0:00:08.451, duration_ms=8451, data={name=PF10025}
+timestamp=[2025-09-17 07:28:39], mode=BUILD, duration=0:00:00.354, duration_ms=354, data={name=App1, configuration=Debug, clean_build=true}
+timestamp=[2025-09-17 07:28:40], mode=BUILD, duration=0:00:00.303, duration_ms=303, data={name=App1_system, configuration=Debug, clean_build=true}
+timestamp=[2025-09-17 07:29:07], mode=PLATFORM_GENERATION, duration=0:00:27.086, duration_ms=27086, data={name=PF10025}
+timestamp=[2025-09-17 07:29:18], mode=BUILD, duration=0:00:02.038, duration_ms=2038, data={name=App1, configuration=Debug, clean_build=false}
+timestamp=[2025-09-17 07:29:27], mode=BUILD, duration=0:00:09.078, duration_ms=9078, data={name=App1_system, configuration=Debug, clean_build=false}
+timestamp=[2025-09-17 08:01:45], mode=MISC, duration=0:00:06.266, duration_ms=6266, data={name=App1_system, type=bif_creation}

@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]C:/PoC/Hilbert_242/PF10025/export/PF10025/sw/PF10025/boot/fsbl.elf
+	C:/PoC/Hilbert_242/App1/_ide/bitstream/Hilbert_242_wrapper.bit
+	C:/PoC/Hilbert_242/App1/Debug/App1.elf
+}
