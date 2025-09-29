@@ -3,8 +3,8 @@
 /export
 
 # Ignore object files and dependent files
-.o
-.d
+# .o
+# .d
 
 #Ignore logs folder and log files
 /logs
@@ -24,14 +24,15 @@ _ide/.wsdata
 *.runs/
 *.sim/
 *.cache/
-*.hw/
-*.ip_user_files/
-*.data/
-*.srcs/
-*.Xil/
+# *.hw/
+# *.ip_user_files/
+# *.data/
+# *.srcs/
+# *.Xil/
 
 # Common output files
 *.jou
 *.log
 *.rpt
 *.str
+
