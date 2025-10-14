@@ -3,7 +3,7 @@
    "Color Coded_ScaleFactor":"0.440051",
    "Color Coded_TopLeft":"-318,2",
    "Default View_ScaleFactor":"0.454412",
-   "Default View_TopLeft":"-456,2",
+   "Default View_TopLeft":"-456,-191",
    "Display-PortTypeClock":"true",
    "Display-PortTypeOthers":"true",
    "Display-PortTypeReset":"true",
@@ -42,30 +42,30 @@ preplace inst rst_ps7_0_100M -pg 1 -lvl 2 -x 420 -y 310 -defaultsOSRD
 preplace inst ila_0 -pg 1 -lvl 5 -x 1370 -y 370 -defaultsOSRD
 preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 110 -y 240 -defaultsOSRD
 preplace netloc btn_0_1 1 0 1 NJ 230
-preplace netloc btn_0_2 1 0 4 NJ 480 NJ 480 NJ 480 910J
+preplace netloc btn_0_2 1 0 4 NJ 480 NJ 480 NJ 480 900J
 preplace netloc btn_2_1 1 0 2 NJ 310 NJ
-preplace netloc clk_wiz_0_clk_out1 1 1 4 210 10 630 80 920 320 NJ
-preplace netloc clk_wiz_0_locked 1 1 1 200 250n
+preplace netloc clk_wiz_0_clk_out1 1 1 4 220 10 640 80 920 320 NJ
+preplace netloc clk_wiz_0_locked 1 1 1 210 250n
 preplace netloc main_0_Out_D 1 4 2 1250 480 NJ
 preplace netloc main_0_Out_E 1 4 2 NJ 510 NJ
 preplace netloc main_0_adc_data_gpio_1 1 4 1 1240 180n
 preplace netloc main_0_adc_data_gpio_2 1 4 1 1230 220n
-preplace netloc main_0_eoc_adc_int 1 1 4 220 410 NJ 410 NJ 410 1260
+preplace netloc main_0_eoc_adc_int 1 1 4 230 410 NJ 410 NJ 410 1260
 preplace netloc main_0_led1 1 4 2 1270 540 NJ
 preplace netloc main_0_led2 1 4 2 1250J 570 NJ
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 2 230 210 610
-preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 2 2 630 250 910J
-preplace netloc switch1_0_1 1 0 4 NJ 630 NJ 630 NJ 630 920J
-preplace netloc switch2_0_1 1 0 4 NJ 660 NJ 660 NJ 660 930J
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 2 240 210 600
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 2 2 640 250 900J
+preplace netloc switch1_0_1 1 0 4 NJ 630 NJ 630 NJ 630 910J
+preplace netloc switch2_0_1 1 0 4 NJ 660 NJ 660 NJ 660 920J
 preplace netloc sys_clock_1 1 0 1 10J 250n
-preplace netloc vauxn15_0_1 1 0 4 NJ 600 NJ 600 NJ 600 910J
+preplace netloc vauxn15_0_1 1 0 4 NJ 600 NJ 600 NJ 600 900J
 preplace netloc vauxn7_0_1 1 0 4 NJ 540 NJ 540 NJ 540 NJ
 preplace netloc vauxp15_0_1 1 0 4 10J 560 NJ 560 NJ 560 NJ
-preplace netloc vauxp7_0_1 1 0 4 NJ 510 NJ 510 NJ 510 910J
+preplace netloc vauxp7_0_1 1 0 4 NJ 510 NJ 510 NJ 510 900J
 preplace netloc axi_smc_M00_AXI 1 3 1 N 170
-preplace netloc processing_system7_0_DDR 1 2 4 610J 60 NJ 60 NJ 60 NJ
+preplace netloc processing_system7_0_DDR 1 2 4 600J 60 NJ 60 NJ 60 NJ
 preplace netloc processing_system7_0_FIXED_IO 1 2 4 NJ 90 NJ 90 NJ 90 NJ
-preplace netloc processing_system7_0_M_AXI_GP0 1 2 1 620 130n
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 1 610 130n
 levelinfo -pg 1 -10 110 420 770 1080 1370 1490
 pagesize -pg 1 -db -bbox -sgen -130 0 1600 690
 "
