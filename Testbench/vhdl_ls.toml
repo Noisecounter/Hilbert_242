@@ -1,7 +1,6 @@
 [libraries]
 
 lib.files = [
-"TB_UART_TX_TOP.vhd",
 "TB_UART_TX.vhd",
 "UART.vhd",
 ]
