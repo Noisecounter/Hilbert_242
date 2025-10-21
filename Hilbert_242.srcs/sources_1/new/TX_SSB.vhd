@@ -4,7 +4,7 @@ USE IEEE.NUMERIC_STD.ALL;
 USE IEEE.STD_LOGIC_UNSIGNED.ALL;
 --use ieee.std_logic_arith.all;
 
-ENTITY main IS
+ENTITY TX_SSB IS
     PORT (
         clk : IN STD_LOGIC;
         btn : IN STD_LOGIC;
@@ -12,20 +12,20 @@ ENTITY main IS
         --In_A: in std_logic_vector(7 downto 0);
         vauxp7 : IN STD_LOGIC; -- Auxiliary Channel 7
         vauxn7 : IN STD_LOGIC;
-        vauxp15 : IN STD_LOGIC; -- Auxiliary Channel 15
-        vauxn15 : IN STD_LOGIC;
+--        vauxp15 : IN STD_LOGIC; -- Auxiliary Channel 15
+--        vauxn15 : IN STD_LOGIC;
         Out_E : OUT STD_LOGIC_VECTOR(7 DOWNTO 0); --for UART Tx
         switch1 : IN STD_LOGIC;
         led1 : OUT STD_LOGIC;
         switch2 : IN STD_LOGIC;
         led2 : OUT STD_LOGIC;
         adc_data_gpio_1 : OUT STD_LOGIC_VECTOR(11 DOWNTO 0);
-        adc_data_gpio_2 : OUT STD_LOGIC_VECTOR(11 DOWNTO 0);
+--        adc_data_gpio_2 : OUT STD_LOGIC_VECTOR(11 DOWNTO 0);
         eoc_adc_int : OUT STD_LOGIC);
 
-END main;
+END TX_SSB;
 
-ARCHITECTURE Behavioral OF main IS
+ARCHITECTURE Behavioral OF TX_SSB IS
 
     COMPONENT xadc_wiz_0
         PORT (
@@ -42,8 +42,8 @@ ARCHITECTURE Behavioral OF main IS
             vn_in : IN STD_LOGIC;
             vauxp7 : IN STD_LOGIC; -- Auxiliary Channel 7
             vauxn7 : IN STD_LOGIC;
-            vauxp15 : IN STD_LOGIC; -- Auxiliary Channel 15
-            vauxn15 : IN STD_LOGIC;
+--            vauxp15 : IN STD_LOGIC; -- Auxiliary Channel 15
+--            vauxn15 : IN STD_LOGIC;
             channel_out : OUT STD_LOGIC_VECTOR(4 DOWNTO 0);
             muxaddr_out : OUT STD_LOGIC_VECTOR(4 DOWNTO 0);
             eoc_out : OUT STD_LOGIC;
@@ -141,9 +141,9 @@ ARCHITECTURE Behavioral OF main IS
 
 BEGIN
     adc_data_1 <= "0000" & data1(15 DOWNTO 4);
-    adc_data_2 <= "0000" & data2(15 DOWNTO 4);
+--    adc_data_2 <= "0000" & data2(15 DOWNTO 4);
     adc_data_gpio_1 <= data1(15 DOWNTO 4);
-    adc_data_gpio_2 <= data2(15 DOWNTO 4);
+--    adc_data_gpio_2 <= data2(15 DOWNTO 4);
     eoc_adc_int <= eoc_out_latched;
 
     --vauxp7 <= vauxp7;
@@ -173,8 +173,8 @@ BEGIN
         vn_in => '0',
         vauxp7 => vauxp7,
         vauxn7 => vauxn7,
-        vauxp15 => vauxp15,
-        vauxn15 => vauxn15,
+--        vauxp15 => vauxp15,
+--        vauxn15 => vauxn15,
         channel_out => channel_out,
         muxaddr_out => OPEN,
         eoc_out => eoc_out,
@@ -297,12 +297,8 @@ BEGIN
             ELSE
                 IF switch2 = '0' THEN
                     IF strb1 = '1' THEN
-                        tempA := unsigned(fir_data_1);
-                        tempB := unsigned(fir_data_2);
-                        ssb_data := (2 * tempA) + (2 * tempB);
-                        --tempC := ssb_data;
-                        dac_data_1 <= STD_LOGIC_VECTOR(ssb_data(12 DOWNTO 1));
-                        dac_data_2 <= fir_data_1(11 DOWNTO 0);
+                        dac_data_1 <= fir_data_1;
+                        dac_data_2 <= fir_data_2;
                         start <= strb1;
                     ELSE
                         dac_data_1 <= "000000000000";
@@ -312,13 +308,9 @@ BEGIN
                     led2 <= '0';
                 ELSE
                     IF strb1 = '1' THEN
-                        tempA := unsigned(fir_data_1);
-                        tempB := unsigned(fir_data_2);
-                        ssb_data := 1023 + (2 * tempA) - (2 * tempB);
-                        --tempC := ssb_data;
-                        dac_data_1 <= STD_LOGIC_VECTOR(ssb_data(12 DOWNTO 1));
-                        dac_data_2 <= fir_data_2(11 DOWNTO 0);
-                        start <= strb1;
+                        -- Wenn switch2 = 1 dann wird I/Q zu Q/I gedreht
+                        dac_data_1 <= fir_data_2;
+                        dac_data_2 <= fir_data_1;   
                     ELSE
                         dac_data_1 <= "000000000000";
                         dac_data_2 <= "000000000000";
