@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
-| Date         : Mon Sep 29 15:11:46 2025
-| Host         : mike-NH5xAx running 64-bit Ubuntu 24.04.2 LTS
+| Date         : Tue Oct 21 23:51:10 2025
+| Host         : mike-NH5xAx running 64-bit Ubuntu 24.04.3 LTS
 | Command      : report_utilization -file Hilbert_242_wrapper_utilization_synth.rpt -pb Hilbert_242_wrapper_utilization_synth.pb
 | Design       : Hilbert_242_wrapper
 | Device       : xc7z010clg400-1
@@ -31,8 +31,8 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*             |    0 |     0 |          0 |     17600 |  0.00 |
-|   LUT as Logic          |    0 |     0 |          0 |     17600 |  0.00 |
+| Slice LUTs*             |   12 |     0 |          0 |     17600 |  0.07 |
+|   LUT as Logic          |   12 |     0 |          0 |     17600 |  0.07 |
 |   LUT as Memory         |    0 |     0 |          0 |      6000 |  0.00 |
 | Slice Registers         |    0 |     0 |          0 |     35200 |  0.00 |
 |   Register as Flip Flop |    0 |     0 |          0 |     35200 |  0.00 |
@@ -93,7 +93,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |   27 |     0 |          0 |       100 | 27.00 |
+| Bonded IOB                  |   25 |     0 |          0 |       100 | 25.00 |
 | Bonded IPADs                |    0 |     0 |          0 |         2 |  0.00 |
 | Bonded IOPADs               |    0 |     0 |          0 |       130 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |         2 |  0.00 |
@@ -150,7 +150,8 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | OBUF     |   18 |                  IO |
-| IBUF     |    9 |                  IO |
+| LUT1     |   12 |                 LUT |
+| IBUF     |    7 |                  IO |
 +----------+------+---------------------+
 
 

@@ -56,6 +56,9 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "Hilbert_242_main_0_0_synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 6
+set_param tcl.collectionResultDisplayLimit 0
+set_param xicom.use_bs_reader 1
 set_param bd.open.in_stealth_mode 1
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
@@ -81,7 +84,7 @@ OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
   /mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.srcs/sources_1/new/UART.vhd
   /mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.srcs/sources_1/new/pmod_da2.vhd
-  /mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.srcs/sources_1/new/main.vhd
+  /mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.srcs/sources_1/new/TX_SSB.vhd
 }
 read_ip -quiet /mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.srcs/sources_1/ip/fir_compiler_1/fir_compiler_1.xci
 set_property used_in_implementation false [get_files -all /mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.gen/sources_1/ip/fir_compiler_1/constraints/fir_compiler_v7_2.xdc]

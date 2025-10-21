@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Sep 29 11:14:31 2025" VIVADOVERSION="2024.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Oct 21 23:49:50 2025" VIVADOVERSION="2024.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo-z7-10:part0:1.1" DEVICE="7z010" NAME="Hilbert_242" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -159,21 +159,13 @@
         <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_in1"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="vauxn15_0" SIGIS="undef" SIGNAME="External_Ports_vauxn15_0">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="main_0" PORT="vauxn15"/>
-      </CONNECTIONS>
-    </PORT>
+    <PORT DIR="I" NAME="vauxn15_0" SIGIS="undef"/>
     <PORT DIR="I" NAME="vauxn7_0" SIGIS="undef" SIGNAME="External_Ports_vauxn7_0">
       <CONNECTIONS>
         <CONNECTION INSTANCE="main_0" PORT="vauxn7"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="vauxp15_0" SIGIS="undef" SIGNAME="External_Ports_vauxp15_0">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="main_0" PORT="vauxp15"/>
-      </CONNECTIONS>
-    </PORT>
+    <PORT DIR="I" NAME="vauxp15_0" SIGIS="undef"/>
     <PORT DIR="I" NAME="vauxp7_0" SIGIS="undef" SIGNAME="External_Ports_vauxp7_0">
       <CONNECTIONS>
         <CONNECTION INSTANCE="main_0" PORT="vauxp7"/>
@@ -424,11 +416,7 @@
         <PARAMETER NAME="C_HIGHADDR" VALUE="0x4120FFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="11" NAME="gpio2_io_i" RIGHT="0" SIGIS="undef" SIGNAME="main_0_adc_data_gpio_2">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="main_0" PORT="adc_data_gpio_2"/>
-          </CONNECTIONS>
-        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="gpio2_io_i" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="I" LEFT="11" NAME="gpio_io_i" RIGHT="0" SIGIS="undef" SIGNAME="main_0_adc_data_gpio_1">
           <CONNECTIONS>
             <CONNECTION INSTANCE="main_0" PORT="adc_data_gpio_1"/>
@@ -4783,11 +4771,7 @@
             <CONNECTION INSTANCE="main_0" PORT="adc_data_gpio_1"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="11" NAME="probe1" RIGHT="0" SIGIS="undef" SIGNAME="main_0_adc_data_gpio_2">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="main_0" PORT="adc_data_gpio_2"/>
-          </CONNECTIONS>
-        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="probe1" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="I" LEFT="0" NAME="probe2" RIGHT="0" SIGIS="undef" SIGNAME="main_0_eoc_adc_int">
           <CONNECTIONS>
             <CONNECTION INSTANCE="main_0" PORT="eoc_adc_int"/>
@@ -4828,12 +4812,6 @@
           <CONNECTIONS>
             <CONNECTION INSTANCE="ila_0" PORT="probe0"/>
             <CONNECTION INSTANCE="axi_gpio_0" PORT="gpio_io_i"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="adc_data_gpio_2" RIGHT="0" SIGIS="undef" SIGNAME="main_0_adc_data_gpio_2">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ila_0" PORT="probe1"/>
-            <CONNECTION INSTANCE="axi_gpio_0" PORT="gpio2_io_i"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="btn" POLARITY="ACTIVE_HIGH" SIGIS="undef" SIGNAME="External_Ports_btn_0">
@@ -4878,19 +4856,9 @@
             <CONNECTION INSTANCE="External_Ports" PORT="vauxn7_0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="vauxn15" SIGIS="undef" SIGNAME="External_Ports_vauxn15_0">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="vauxn15_0"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="I" NAME="vauxp7" SIGIS="undef" SIGNAME="External_Ports_vauxp7_0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="vauxp7_0"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="vauxp15" SIGIS="undef" SIGNAME="External_Ports_vauxp15_0">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="vauxp15_0"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

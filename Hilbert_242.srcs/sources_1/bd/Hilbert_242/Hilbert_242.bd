@@ -2127,12 +2127,6 @@
           "vauxn7": {
             "direction": "I"
           },
-          "vauxp15": {
-            "direction": "I"
-          },
-          "vauxn15": {
-            "direction": "I"
-          },
           "Out_E": {
             "direction": "O",
             "left": "7",
@@ -2151,11 +2145,6 @@
             "direction": "O"
           },
           "adc_data_gpio_1": {
-            "direction": "O",
-            "left": "11",
-            "right": "0"
-          },
-          "adc_data_gpio_2": {
             "direction": "O",
             "left": "11",
             "right": "0"
@@ -2425,7 +2414,6 @@
       },
       "main_0_adc_data_gpio_2": {
         "ports": [
-          "main_0/adc_data_gpio_2",
           "ila_0/probe1",
           "axi_gpio_0/gpio2_io_i"
         ]
@@ -2483,8 +2471,7 @@
       },
       "vauxn15_0_1": {
         "ports": [
-          "vauxn15_0",
-          "main_0/vauxn15"
+          "vauxn15_0"
         ]
       },
       "vauxn7_0_1": {
@@ -2495,8 +2482,7 @@
       },
       "vauxp15_0_1": {
         "ports": [
-          "vauxp15_0",
-          "main_0/vauxp15"
+          "vauxp15_0"
         ]
       },
       "vauxp7_0_1": {

@@ -4,7 +4,7 @@ USE IEEE.NUMERIC_STD.ALL;
 USE IEEE.STD_LOGIC_UNSIGNED.ALL;
 --use ieee.std_logic_arith.all;
 
-ENTITY TX_SSB IS
+ENTITY main IS
     PORT (
         clk : IN STD_LOGIC;
         btn : IN STD_LOGIC;
@@ -23,9 +23,9 @@ ENTITY TX_SSB IS
 --        adc_data_gpio_2 : OUT STD_LOGIC_VECTOR(11 DOWNTO 0);
         eoc_adc_int : OUT STD_LOGIC);
 
-END TX_SSB;
+END main;
 
-ARCHITECTURE Behavioral OF TX_SSB IS
+ARCHITECTURE Behavioral OF main IS
 
     COMPONENT xadc_wiz_0
         PORT (
@@ -212,7 +212,7 @@ BEGIN
         aclk => clk,
         s_axis_data_tvalid => eoc_out_latched,
         s_axis_data_tready => OPEN,
-        s_axis_data_tdata => adc_data_2,
+        s_axis_data_tdata => adc_data_1,
         m_axis_data_tvalid => strb2, --strobe1 and strobe2 are in sync
         m_axis_data_tdata => fir_data_2
     );
@@ -297,8 +297,8 @@ BEGIN
             ELSE
                 IF switch2 = '0' THEN
                     IF strb1 = '1' THEN
-                        dac_data_1 <= fir_data_1;
-                        dac_data_2 <= fir_data_2;
+                        dac_data_1 <= "101111111111";
+                        dac_data_2 <= "010101010101";
                         start <= strb1;
                     ELSE
                         dac_data_1 <= "000000000000";
@@ -309,8 +309,8 @@ BEGIN
                 ELSE
                     IF strb1 = '1' THEN
                         -- Wenn switch2 = 1 dann wird I/Q zu Q/I gedreht
-                        dac_data_1 <= fir_data_2;
-                        dac_data_2 <= fir_data_1;   
+                        dac_data_1 <= "000000000000";
+                        dac_data_2 <= "111111111111";   
                     ELSE
                         dac_data_1 <= "000000000000";
                         dac_data_2 <= "000000000000";

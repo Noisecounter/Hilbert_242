@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1759151470" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/main.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1761083393" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/main.dcp">
+  <File Type="VDS-TIMINGSUMMARY" Name="Hilbert_242_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="Hilbert_242_wrapper.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="Hilbert_242_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="Hilbert_242_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="Hilbert_242_wrapper_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="Hilbert_242_wrapper.vds"/>
   <File Type="REPORTS-TCL" Name="Hilbert_242_wrapper_reports.tcl"/>
+  <File Type="VDS-TIMING-PB" Name="Hilbert_242_wrapper_timing_summary_synth.pb"/>
   <File Type="PA-TCL" Name="Hilbert_242_wrapper.tcl"/>
-  <File Type="RDS-UTIL" Name="Hilbert_242_wrapper_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="Hilbert_242_wrapper_utilization_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/UART.vhd">
@@ -20,7 +23,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/main.vhd">
+    <File Path="$PSRCDIR/sources_1/new/TX_SSB.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -75,10 +78,10 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="Hilbert_242_main_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="fir_compiler_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="xadc_wiz_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Hilbert_242_clk_wiz_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Hilbert_242_processing_system7_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="fir_compiler_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="Hilbert_242_main_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="fir_compiler_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="xadc_wiz_0"/>
 </GenRun>

@@ -60,15 +60,12 @@ ENTITY Hilbert_242_main_0_0 IS
     Out_D : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
     vauxp7 : IN STD_LOGIC;
     vauxn7 : IN STD_LOGIC;
-    vauxp15 : IN STD_LOGIC;
-    vauxn15 : IN STD_LOGIC;
     Out_E : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
     switch1 : IN STD_LOGIC;
     led1 : OUT STD_LOGIC;
     switch2 : IN STD_LOGIC;
     led2 : OUT STD_LOGIC;
     adc_data_gpio_1 : OUT STD_LOGIC_VECTOR(11 DOWNTO 0);
-    adc_data_gpio_2 : OUT STD_LOGIC_VECTOR(11 DOWNTO 0);
     eoc_adc_int : OUT STD_LOGIC
   );
 END Hilbert_242_main_0_0;
@@ -83,15 +80,12 @@ ARCHITECTURE Hilbert_242_main_0_0_arch OF Hilbert_242_main_0_0 IS
       Out_D : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
       vauxp7 : IN STD_LOGIC;
       vauxn7 : IN STD_LOGIC;
-      vauxp15 : IN STD_LOGIC;
-      vauxn15 : IN STD_LOGIC;
       Out_E : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
       switch1 : IN STD_LOGIC;
       led1 : OUT STD_LOGIC;
       switch2 : IN STD_LOGIC;
       led2 : OUT STD_LOGIC;
       adc_data_gpio_1 : OUT STD_LOGIC_VECTOR(11 DOWNTO 0);
-      adc_data_gpio_2 : OUT STD_LOGIC_VECTOR(11 DOWNTO 0);
       eoc_adc_int : OUT STD_LOGIC
     );
   END COMPONENT main;
@@ -117,15 +111,12 @@ BEGIN
       Out_D => Out_D,
       vauxp7 => vauxp7,
       vauxn7 => vauxn7,
-      vauxp15 => vauxp15,
-      vauxn15 => vauxn15,
       Out_E => Out_E,
       switch1 => switch1,
       led1 => led1,
       switch2 => switch2,
       led2 => led2,
       adc_data_gpio_1 => adc_data_gpio_1,
-      adc_data_gpio_2 => adc_data_gpio_2,
       eoc_adc_int => eoc_adc_int
     );
 END Hilbert_242_main_0_0_arch;

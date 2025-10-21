@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
-| Date             : Mon Sep 29 15:13:20 2025
-| Host             : mike-NH5xAx running 64-bit Ubuntu 24.04.2 LTS
+| Date             : Tue Oct 21 23:52:47 2025
+| Host             : mike-NH5xAx running 64-bit Ubuntu 24.04.3 LTS
 | Command          : report_power -file Hilbert_242_wrapper_power_routed.rpt -pb Hilbert_242_wrapper_power_summary_routed.pb -rpx Hilbert_242_wrapper_power_routed.rpx
 | Design           : Hilbert_242_wrapper
 | Device           : xc7z010clg400-1
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.661        |
+| Total On-Chip Power (W)  | 1.653        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.538        |
+| Dynamic (W)              | 1.530        |
 | Device Static (W)        | 0.123        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 65.8         |
-| Junction Temperature (C) | 44.2         |
+| Max Ambient (C)          | 65.9         |
+| Junction Temperature (C) | 44.1         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,24 +52,23 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.011 |       11 |       --- |             --- |
-| Slice Logic              |     0.002 |     6285 |       --- |             --- |
-|   LUT as Logic           |     0.002 |     1768 |     17600 |           10.05 |
-|   Register               |    <0.001 |     3204 |     35200 |            9.10 |
-|   CARRY4                 |    <0.001 |       64 |      4400 |            1.45 |
-|   LUT as Shift Register  |    <0.001 |      132 |      6000 |            2.20 |
+| Clocks                   |     0.010 |       11 |       --- |             --- |
+| Slice Logic              |     0.002 |     5882 |       --- |             --- |
+|   LUT as Logic           |     0.002 |     1684 |     17600 |            9.57 |
+|   Register               |    <0.001 |     2997 |     35200 |            8.51 |
+|   CARRY4                 |    <0.001 |       49 |      4400 |            1.11 |
+|   LUT as Shift Register  |    <0.001 |      111 |      6000 |            1.85 |
 |   LUT as Distributed RAM |    <0.001 |       24 |      6000 |            0.40 |
 |   F7/F8 Muxes            |    <0.001 |        4 |     17600 |            0.02 |
-|   Others                 |     0.000 |      549 |       --- |             --- |
-| Signals                  |     0.003 |     4654 |       --- |             --- |
-| Block RAM                |     0.005 |        5 |        60 |            8.33 |
+|   Others                 |     0.000 |      513 |       --- |             --- |
+| Signals                  |     0.003 |     4327 |       --- |             --- |
+| Block RAM                |     0.002 |        4 |        60 |            6.67 |
 | MMCM                     |     0.106 |        1 |         2 |           50.00 |
-| DSPs                     |     0.002 |        2 |        80 |            2.50 |
-| I/O                      |     0.006 |       28 |       100 |           28.00 |
+| I/O                      |     0.005 |       26 |       100 |           26.00 |
 | XADC                     |     0.002 |        1 |       --- |             --- |
 | PS7                      |     1.400 |        1 |       --- |             --- |
 | Static Power             |     0.123 |          |           |                 |
-| Total                    |     1.661 |          |           |                 |
+| Total                    |     1.653 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -79,9 +78,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.032 |       0.025 |      0.007 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.025 |       0.018 |      0.007 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.067 |       0.059 |      0.008 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -163,8 +162,8 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| Hilbert_242_wrapper      |     1.538 |
-|   Hilbert_242_i          |     1.530 |
+| Hilbert_242_wrapper      |     1.530 |
+|   Hilbert_242_i          |     1.523 |
 |     axi_gpio_0           |     0.002 |
 |       U0                 |     0.002 |
 |     axi_smc              |     0.005 |
@@ -173,8 +172,8 @@ Table of Contents
 |       inst               |     0.107 |
 |     ila_0                |     0.006 |
 |       U0                 |     0.006 |
-|     main_0               |     0.011 |
-|       U0                 |     0.011 |
+|     main_0               |     0.003 |
+|       U0                 |     0.003 |
 |     processing_system7_0 |     1.400 |
 |       inst               |     1.400 |
 |   dbg_hub                |     0.002 |

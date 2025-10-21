@@ -3,23 +3,23 @@
 # SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Mon Sep 29 15:11:13 2025
-# Process ID         : 28497
+# Start of session at: Tue Oct 21 23:50:37 2025
+# Process ID         : 283115
 # Current directory  : /mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.runs/synth_1
 # Command line       : vivado -log Hilbert_242_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Hilbert_242_wrapper.tcl
 # Log file           : /mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.runs/synth_1/Hilbert_242_wrapper.vds
 # Journal file       : /mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.runs/synth_1/vivado.jou
 # Running On         : mike-NH5xAx
 # Platform           : Ubuntu
-# Operating System   : Ubuntu 24.04.2 LTS
+# Operating System   : Ubuntu 24.04.3 LTS
 # Processor Detail   : AMD Ryzen 9 3900X 12-Core Processor
-# CPU Frequency      : 3800.000 MHz
+# CPU Frequency      : 4303.316 MHz
 # CPU Physical cores : 12
 # CPU Logical cores  : 24
 # Host memory        : 16650 MB
 # Swap memory        : 18924 MB
 # Total Virtual      : 35575 MB
-# Available Virtual  : 30135 MB
+# Available Virtual  : 25318 MB
 #-----------------------------------------------------------
 source Hilbert_242_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -37,43 +37,46 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 28582
+INFO: [Synth 8-7075] Helper process launched with PID 283201
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1958.816 ; gain = 370.270 ; free physical = 4917 ; free virtual = 27676
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1959.230 ; gain = 387.207 ; free physical = 969 ; free virtual = 23089
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'Hilbert_242_wrapper' [/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.gen/sources_1/bd/Hilbert_242/hdl/Hilbert_242_wrapper.vhd:55]
 INFO: [Synth 8-3491] module 'Hilbert_242' declared at '/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.gen/sources_1/bd/Hilbert_242/synth/Hilbert_242.vhd:15' bound to instance 'Hilbert_242_i' of component 'Hilbert_242' [/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.gen/sources_1/bd/Hilbert_242/hdl/Hilbert_242_wrapper.vhd:96]
 INFO: [Synth 8-638] synthesizing module 'Hilbert_242' [/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.gen/sources_1/bd/Hilbert_242/synth/Hilbert_242.vhd:59]
-INFO: [Synth 8-3491] module 'Hilbert_242_axi_gpio_0_0' declared at '/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.runs/synth_1/.Xil/Vivado-28497-mike-NH5xAx/realtime/Hilbert_242_axi_gpio_0_0_stub.vhdl:6' bound to instance 'axi_gpio_0' of component 'Hilbert_242_axi_gpio_0_0' [/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.gen/sources_1/bd/Hilbert_242/synth/Hilbert_242.vhd:377]
-INFO: [Synth 8-638] synthesizing module 'Hilbert_242_axi_gpio_0_0' [/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.runs/synth_1/.Xil/Vivado-28497-mike-NH5xAx/realtime/Hilbert_242_axi_gpio_0_0_stub.vhdl:39]
-INFO: [Synth 8-3491] module 'Hilbert_242_axi_smc_0' declared at '/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.runs/synth_1/.Xil/Vivado-28497-mike-NH5xAx/realtime/Hilbert_242_axi_smc_0_stub.vhdl:6' bound to instance 'axi_smc' of component 'Hilbert_242_axi_smc_0' [/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.gen/sources_1/bd/Hilbert_242/synth/Hilbert_242.vhd:401]
-INFO: [Synth 8-638] synthesizing module 'Hilbert_242_axi_smc_0' [/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.runs/synth_1/.Xil/Vivado-28497-mike-NH5xAx/realtime/Hilbert_242_axi_smc_0_stub.vhdl:77]
-INFO: [Synth 8-3491] module 'Hilbert_242_clk_wiz_0_0' declared at '/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.runs/synth_1/.Xil/Vivado-28497-mike-NH5xAx/realtime/Hilbert_242_clk_wiz_0_0_stub.vhdl:6' bound to instance 'clk_wiz_0' of component 'Hilbert_242_clk_wiz_0_0' [/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.gen/sources_1/bd/Hilbert_242/synth/Hilbert_242.vhd:463]
-INFO: [Synth 8-638] synthesizing module 'Hilbert_242_clk_wiz_0_0' [/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.runs/synth_1/.Xil/Vivado-28497-mike-NH5xAx/realtime/Hilbert_242_clk_wiz_0_0_stub.vhdl:18]
-INFO: [Synth 8-3491] module 'Hilbert_242_ila_0_0' declared at '/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.runs/synth_1/.Xil/Vivado-28497-mike-NH5xAx/realtime/Hilbert_242_ila_0_0_stub.vhdl:6' bound to instance 'ila_0' of component 'Hilbert_242_ila_0_0' [/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.gen/sources_1/bd/Hilbert_242/synth/Hilbert_242.vhd:470]
-INFO: [Synth 8-638] synthesizing module 'Hilbert_242_ila_0_0' [/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.runs/synth_1/.Xil/Vivado-28497-mike-NH5xAx/realtime/Hilbert_242_ila_0_0_stub.vhdl:24]
-INFO: [Synth 8-3491] module 'Hilbert_242_main_0_0' declared at '/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.runs/synth_1/.Xil/Vivado-28497-mike-NH5xAx/realtime/Hilbert_242_main_0_0_stub.vhdl:6' bound to instance 'main_0' of component 'Hilbert_242_main_0_0' [/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.gen/sources_1/bd/Hilbert_242/synth/Hilbert_242.vhd:479]
-INFO: [Synth 8-638] synthesizing module 'Hilbert_242_main_0_0' [/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.runs/synth_1/.Xil/Vivado-28497-mike-NH5xAx/realtime/Hilbert_242_main_0_0_stub.vhdl:35]
-INFO: [Synth 8-3491] module 'Hilbert_242_processing_system7_0_0' declared at '/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.runs/synth_1/.Xil/Vivado-28497-mike-NH5xAx/realtime/Hilbert_242_processing_system7_0_0_stub.vhdl:6' bound to instance 'processing_system7_0' of component 'Hilbert_242_processing_system7_0_0' [/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.gen/sources_1/bd/Hilbert_242/synth/Hilbert_242.vhd:497]
-INFO: [Synth 8-638] synthesizing module 'Hilbert_242_processing_system7_0_0' [/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.runs/synth_1/.Xil/Vivado-28497-mike-NH5xAx/realtime/Hilbert_242_processing_system7_0_0_stub.vhdl:83]
-INFO: [Synth 8-3491] module 'Hilbert_242_rst_ps7_0_100M_0' declared at '/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.runs/synth_1/.Xil/Vivado-28497-mike-NH5xAx/realtime/Hilbert_242_rst_ps7_0_100M_0_stub.vhdl:6' bound to instance 'rst_ps7_0_100M' of component 'Hilbert_242_rst_ps7_0_100M_0' [/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.gen/sources_1/bd/Hilbert_242/synth/Hilbert_242.vhd:565]
-INFO: [Synth 8-638] synthesizing module 'Hilbert_242_rst_ps7_0_100M_0' [/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.runs/synth_1/.Xil/Vivado-28497-mike-NH5xAx/realtime/Hilbert_242_rst_ps7_0_100M_0_stub.vhdl:28]
+INFO: [Synth 8-3491] module 'Hilbert_242_axi_gpio_0_0' declared at '/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.runs/synth_1/.Xil/Vivado-283115-mike-NH5xAx/realtime/Hilbert_242_axi_gpio_0_0_stub.vhdl:6' bound to instance 'axi_gpio_0' of component 'Hilbert_242_axi_gpio_0_0' [/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.gen/sources_1/bd/Hilbert_242/synth/Hilbert_242.vhd:375]
+INFO: [Synth 8-638] synthesizing module 'Hilbert_242_axi_gpio_0_0' [/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.runs/synth_1/.Xil/Vivado-283115-mike-NH5xAx/realtime/Hilbert_242_axi_gpio_0_0_stub.vhdl:39]
+INFO: [Synth 8-3491] module 'Hilbert_242_axi_smc_0' declared at '/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.runs/synth_1/.Xil/Vivado-283115-mike-NH5xAx/realtime/Hilbert_242_axi_smc_0_stub.vhdl:6' bound to instance 'axi_smc' of component 'Hilbert_242_axi_smc_0' [/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.gen/sources_1/bd/Hilbert_242/synth/Hilbert_242.vhd:399]
+INFO: [Synth 8-638] synthesizing module 'Hilbert_242_axi_smc_0' [/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.runs/synth_1/.Xil/Vivado-283115-mike-NH5xAx/realtime/Hilbert_242_axi_smc_0_stub.vhdl:77]
+INFO: [Synth 8-3491] module 'Hilbert_242_clk_wiz_0_0' declared at '/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.runs/synth_1/.Xil/Vivado-283115-mike-NH5xAx/realtime/Hilbert_242_clk_wiz_0_0_stub.vhdl:6' bound to instance 'clk_wiz_0' of component 'Hilbert_242_clk_wiz_0_0' [/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.gen/sources_1/bd/Hilbert_242/synth/Hilbert_242.vhd:461]
+INFO: [Synth 8-638] synthesizing module 'Hilbert_242_clk_wiz_0_0' [/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.runs/synth_1/.Xil/Vivado-283115-mike-NH5xAx/realtime/Hilbert_242_clk_wiz_0_0_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'Hilbert_242_ila_0_0' declared at '/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.runs/synth_1/.Xil/Vivado-283115-mike-NH5xAx/realtime/Hilbert_242_ila_0_0_stub.vhdl:6' bound to instance 'ila_0' of component 'Hilbert_242_ila_0_0' [/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.gen/sources_1/bd/Hilbert_242/synth/Hilbert_242.vhd:468]
+INFO: [Synth 8-638] synthesizing module 'Hilbert_242_ila_0_0' [/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.runs/synth_1/.Xil/Vivado-283115-mike-NH5xAx/realtime/Hilbert_242_ila_0_0_stub.vhdl:24]
+INFO: [Synth 8-3491] module 'Hilbert_242_main_0_0' declared at '/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.runs/synth_1/.Xil/Vivado-283115-mike-NH5xAx/realtime/Hilbert_242_main_0_0_stub.vhdl:6' bound to instance 'main_0' of component 'Hilbert_242_main_0_0' [/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.gen/sources_1/bd/Hilbert_242/synth/Hilbert_242.vhd:477]
+INFO: [Synth 8-638] synthesizing module 'Hilbert_242_main_0_0' [/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.runs/synth_1/.Xil/Vivado-283115-mike-NH5xAx/realtime/Hilbert_242_main_0_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'Hilbert_242_processing_system7_0_0' declared at '/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.runs/synth_1/.Xil/Vivado-283115-mike-NH5xAx/realtime/Hilbert_242_processing_system7_0_0_stub.vhdl:6' bound to instance 'processing_system7_0' of component 'Hilbert_242_processing_system7_0_0' [/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.gen/sources_1/bd/Hilbert_242/synth/Hilbert_242.vhd:492]
+INFO: [Synth 8-638] synthesizing module 'Hilbert_242_processing_system7_0_0' [/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.runs/synth_1/.Xil/Vivado-283115-mike-NH5xAx/realtime/Hilbert_242_processing_system7_0_0_stub.vhdl:83]
+INFO: [Synth 8-3491] module 'Hilbert_242_rst_ps7_0_100M_0' declared at '/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.runs/synth_1/.Xil/Vivado-283115-mike-NH5xAx/realtime/Hilbert_242_rst_ps7_0_100M_0_stub.vhdl:6' bound to instance 'rst_ps7_0_100M' of component 'Hilbert_242_rst_ps7_0_100M_0' [/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.gen/sources_1/bd/Hilbert_242/synth/Hilbert_242.vhd:560]
+INFO: [Synth 8-638] synthesizing module 'Hilbert_242_rst_ps7_0_100M_0' [/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.runs/synth_1/.Xil/Vivado-283115-mike-NH5xAx/realtime/Hilbert_242_rst_ps7_0_100M_0_stub.vhdl:28]
 INFO: [Synth 8-256] done synthesizing module 'Hilbert_242' (0#1) [/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.gen/sources_1/bd/Hilbert_242/synth/Hilbert_242.vhd:59]
 INFO: [Synth 8-256] done synthesizing module 'Hilbert_242_wrapper' (0#1) [/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.gen/sources_1/bd/Hilbert_242/hdl/Hilbert_242_wrapper.vhd:55]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'Hilbert_242_i'. This will prevent further optimization [/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.gen/sources_1/bd/Hilbert_242/hdl/Hilbert_242_wrapper.vhd:96]
+WARNING: [Synth 8-3848] Net NLW_axi_gpio_0_gpio2_io_i_UNCONNECTED in module/entity Hilbert_242 does not have driver. [/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.gen/sources_1/bd/Hilbert_242/synth/Hilbert_242.vhd:328]
+WARNING: [Synth 8-7129] Port vauxn15_0 in module Hilbert_242 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vauxp15_0 in module Hilbert_242 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2041.785 ; gain = 453.238 ; free physical = 4809 ; free virtual = 27569
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2041.199 ; gain = 469.176 ; free physical = 870 ; free virtual = 22990
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2053.660 ; gain = 465.113 ; free physical = 4809 ; free virtual = 27569
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2056.043 ; gain = 484.020 ; free physical = 870 ; free virtual = 22990
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2053.660 ; gain = 465.113 ; free physical = 4809 ; free virtual = 27569
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2056.043 ; gain = 484.020 ; free physical = 870 ; free virtual = 22990
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2053.660 ; gain = 0.000 ; free physical = 4809 ; free virtual = 27569
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2056.043 ; gain = 0.000 ; free physical = 870 ; free virtual = 22990
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -143,22 +146,22 @@ Parsing XDC File [/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_
 Finished Parsing XDC File [/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2102.586 ; gain = 0.000 ; free physical = 4796 ; free virtual = 27559
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2104.969 ; gain = 0.000 ; free physical = 864 ; free virtual = 22984
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2102.586 ; gain = 0.000 ; free physical = 4796 ; free virtual = 27559
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2104.969 ; gain = 0.000 ; free physical = 864 ; free virtual = 22984
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2102.586 ; gain = 514.039 ; free physical = 4804 ; free virtual = 27567
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2104.969 ; gain = 532.945 ; free physical = 875 ; free virtual = 22995
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2110.590 ; gain = 522.043 ; free physical = 4804 ; free virtual = 27567
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2112.973 ; gain = 540.949 ; free physical = 875 ; free virtual = 22995
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -434,10 +437,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for Hilbert_242_i/rst_ps7_0_100M. (co
 Applied set_property KEEP_HIERARCHY = SOFT for Hilbert_242_i/ila_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for Hilbert_242_i/clk_wiz_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2110.590 ; gain = 522.043 ; free physical = 4805 ; free virtual = 27567
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2112.973 ; gain = 540.949 ; free physical = 875 ; free virtual = 22995
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2110.590 ; gain = 522.043 ; free physical = 4805 ; free virtual = 27569
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2112.973 ; gain = 540.949 ; free physical = 873 ; free virtual = 22995
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -459,26 +462,28 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port vauxn15_0 in module Hilbert_242 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vauxp15_0 in module Hilbert_242 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2110.590 ; gain = 522.043 ; free physical = 4802 ; free virtual = 27570
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2112.973 ; gain = 540.949 ; free physical = 875 ; free virtual = 23000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2184.590 ; gain = 596.043 ; free physical = 4727 ; free virtual = 27495
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2184.973 ; gain = 612.949 ; free physical = 797 ; free virtual = 22923
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2184.590 ; gain = 596.043 ; free physical = 4727 ; free virtual = 27495
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2184.973 ; gain = 612.949 ; free physical = 796 ; free virtual = 22922
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2194.605 ; gain = 606.059 ; free physical = 4719 ; free virtual = 27487
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2194.988 ; gain = 622.965 ; free physical = 788 ; free virtual = 22914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -495,38 +500,62 @@ Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_gpio_0 has unconnected pin gpio2_io_i[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_gpio_0 has unconnected pin gpio2_io_i[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_gpio_0 has unconnected pin gpio2_io_i[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_gpio_0 has unconnected pin gpio2_io_i[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_gpio_0 has unconnected pin gpio2_io_i[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_gpio_0 has unconnected pin gpio2_io_i[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_gpio_0 has unconnected pin gpio2_io_i[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_gpio_0 has unconnected pin gpio2_io_i[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_gpio_0 has unconnected pin gpio2_io_i[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_gpio_0 has unconnected pin gpio2_io_i[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_gpio_0 has unconnected pin gpio2_io_i[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_gpio_0 has unconnected pin gpio2_io_i[0]
+WARNING: [Synth 8-3295] tying undriven pin NLW_ila_0_probe1_UNCONNECTED_inferred:in0[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin NLW_ila_0_probe1_UNCONNECTED_inferred:in0[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin NLW_ila_0_probe1_UNCONNECTED_inferred:in0[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin NLW_ila_0_probe1_UNCONNECTED_inferred:in0[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin NLW_ila_0_probe1_UNCONNECTED_inferred:in0[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin NLW_ila_0_probe1_UNCONNECTED_inferred:in0[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin NLW_ila_0_probe1_UNCONNECTED_inferred:in0[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin NLW_ila_0_probe1_UNCONNECTED_inferred:in0[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin NLW_ila_0_probe1_UNCONNECTED_inferred:in0[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin NLW_ila_0_probe1_UNCONNECTED_inferred:in0[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin NLW_ila_0_probe1_UNCONNECTED_inferred:in0[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin NLW_ila_0_probe1_UNCONNECTED_inferred:in0[0] to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2363.418 ; gain = 774.871 ; free physical = 4573 ; free virtual = 27341
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2363.801 ; gain = 791.777 ; free physical = 651 ; free virtual = 22776
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2363.418 ; gain = 774.871 ; free physical = 4573 ; free virtual = 27341
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2363.801 ; gain = 791.777 ; free physical = 651 ; free virtual = 22776
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2363.418 ; gain = 774.871 ; free physical = 4573 ; free virtual = 27341
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2363.801 ; gain = 791.777 ; free physical = 651 ; free virtual = 22776
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2363.418 ; gain = 774.871 ; free physical = 4573 ; free virtual = 27341
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2363.801 ; gain = 791.777 ; free physical = 651 ; free virtual = 22776
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2363.418 ; gain = 774.871 ; free physical = 4573 ; free virtual = 27341
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2363.801 ; gain = 791.777 ; free physical = 651 ; free virtual = 22776
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2363.418 ; gain = 774.871 ; free physical = 4573 ; free virtual = 27341
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2363.801 ; gain = 791.777 ; free physical = 651 ; free virtual = 22776
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -556,32 +585,33 @@ Report Cell Usage:
 |5     |Hilbert_242_main_0_0_bbox               |     1|
 |6     |Hilbert_242_processing_system7_0_0_bbox |     1|
 |7     |Hilbert_242_rst_ps7_0_100M_0_bbox       |     1|
-|8     |IBUF                                    |     9|
-|9     |OBUF                                    |    18|
+|8     |LUT1                                    |    12|
+|9     |IBUF                                    |     7|
+|10    |OBUF                                    |    18|
 +------+----------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2363.418 ; gain = 774.871 ; free physical = 4573 ; free virtual = 27341
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2363.801 ; gain = 791.777 ; free physical = 651 ; free virtual = 22776
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2363.418 ; gain = 725.945 ; free physical = 4573 ; free virtual = 27341
-Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2363.426 ; gain = 774.871 ; free physical = 4573 ; free virtual = 27341
+Synthesis finished with 0 errors, 12 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2363.801 ; gain = 742.852 ; free physical = 651 ; free virtual = 22777
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2363.809 ; gain = 791.777 ; free physical = 651 ; free virtual = 22777
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2363.426 ; gain = 0.000 ; free physical = 4737 ; free virtual = 27505
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2363.809 ; gain = 0.000 ; free physical = 811 ; free virtual = 22937
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2363.426 ; gain = 0.000 ; free physical = 4740 ; free virtual = 27508
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2363.809 ; gain = 0.000 ; free physical = 811 ; free virtual = 22937
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 28e0051b
+Synth Design complete | Checksum: 6df986fd
 INFO: [Common 17-83] Releasing license: Synthesis
-48 Infos, 14 Warnings, 12 Critical Warnings and 0 Errors encountered.
+48 Infos, 31 Warnings, 24 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:29 . Memory (MB): peak = 2363.426 ; gain = 926.953 ; free physical = 4740 ; free virtual = 27508
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1781.097; main = 1571.195; forked = 268.034
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3254.723; main = 2363.422; forked = 918.113
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:28 . Memory (MB): peak = 2363.809 ; gain = 991.883 ; free physical = 812 ; free virtual = 22937
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1768.386; main = 1559.794; forked = 262.446
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3255.105; main = 2363.805; forked = 918.113
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2387.430 ; gain = 0.000 ; free physical = 4740 ; free virtual = 27508
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2387.812 ; gain = 0.000 ; free physical = 812 ; free virtual = 22937
 INFO: [Common 17-1381] The checkpoint '/mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.runs/synth_1/Hilbert_242_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file Hilbert_242_wrapper_utilization_synth.rpt -pb Hilbert_242_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Sep 29 15:11:46 2025...
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 21 23:51:10 2025...

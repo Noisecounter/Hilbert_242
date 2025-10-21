@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="Hilbert_242_main_0_0_synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1759137408">
+<GenRun Id="Hilbert_242_main_0_0_synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1761083391">
+  <File Type="VDS-TIMINGSUMMARY" Name="Hilbert_242_main_0_0_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="Hilbert_242_main_0_0.dcp"/>
-  <File Type="RDS-RDS" Name="Hilbert_242_main_0_0.vds"/>
-  <File Type="REPORTS-TCL" Name="Hilbert_242_main_0_0_reports.tcl"/>
-  <File Type="PA-TCL" Name="Hilbert_242_main_0_0.tcl"/>
-  <File Type="RDS-UTIL" Name="Hilbert_242_main_0_0_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Hilbert_242_main_0_0_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="Hilbert_242_main_0_0_utilization_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Hilbert_242_main_0_0_timing_summary_synth.pb"/>
+  <File Type="PA-TCL" Name="Hilbert_242_main_0_0.tcl"/>
+  <File Type="REPORTS-TCL" Name="Hilbert_242_main_0_0_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Hilbert_242_main_0_0.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="Hilbert_242_main_0_0_drc_synth.rpt"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Hilbert_242_main_0_0" RelGenDir="$PGENDIR/Hilbert_242_main_0_0">
     <File Path="$PSRCDIR/sources_1/bd/Hilbert_242/ip/Hilbert_242_main_0_0/Hilbert_242_main_0_0.xci">
       <FileInfo>
@@ -49,7 +52,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

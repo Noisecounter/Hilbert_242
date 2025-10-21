@@ -2,8 +2,8 @@
 --Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
---Date        : Mon Sep 29 11:14:29 2025
---Host        : mike-NH5xAx running 64-bit Ubuntu 24.04.2 LTS
+--Date        : Tue Oct 21 23:49:48 2025
+--Host        : mike-NH5xAx running 64-bit Ubuntu 24.04.3 LTS
 --Command     : generate_target Hilbert_242.bd
 --Design      : Hilbert_242
 --Purpose     : IP block netlist
@@ -133,15 +133,12 @@ architecture STRUCTURE of Hilbert_242 is
     Out_D : out STD_LOGIC_VECTOR ( 7 downto 0 );
     vauxp7 : in STD_LOGIC;
     vauxn7 : in STD_LOGIC;
-    vauxp15 : in STD_LOGIC;
-    vauxn15 : in STD_LOGIC;
     Out_E : out STD_LOGIC_VECTOR ( 7 downto 0 );
     switch1 : in STD_LOGIC;
     led1 : out STD_LOGIC;
     switch2 : in STD_LOGIC;
     led2 : out STD_LOGIC;
     adc_data_gpio_1 : out STD_LOGIC_VECTOR ( 11 downto 0 );
-    adc_data_gpio_2 : out STD_LOGIC_VECTOR ( 11 downto 0 );
     eoc_adc_int : out STD_LOGIC
   );
   end component Hilbert_242_main_0_0;
@@ -287,7 +284,6 @@ architecture STRUCTURE of Hilbert_242 is
   signal clk_wiz_0_locked : STD_LOGIC;
   signal \^led1_0\ : STD_LOGIC;
   signal main_0_adc_data_gpio_1 : STD_LOGIC_VECTOR ( 11 downto 0 );
-  signal main_0_adc_data_gpio_2 : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal main_0_eoc_adc_int : STD_LOGIC;
   signal processing_system7_0_FCLK_RESET0_N : STD_LOGIC;
   signal processing_system7_0_M_AXI_GP0_ARADDR : STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -329,8 +325,10 @@ architecture STRUCTURE of Hilbert_242 is
   signal processing_system7_0_M_AXI_GP0_WSTRB : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal processing_system7_0_M_AXI_GP0_WVALID : STD_LOGIC;
   signal rst_ps7_0_100M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal NLW_axi_gpio_0_gpio2_io_i_UNCONNECTED : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal NLW_axi_smc_M00_AXI_arprot_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal NLW_axi_smc_M00_AXI_awprot_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal NLW_ila_0_probe1_UNCONNECTED : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal NLW_processing_system7_0_USB0_VBUS_PWRSELECT_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_USB0_PORT_INDCTL_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal NLW_rst_ps7_0_100M_mb_reset_UNCONNECTED : STD_LOGIC;
@@ -376,7 +374,7 @@ begin
   led1_0 <= \^led1_0\;
 axi_gpio_0: component Hilbert_242_axi_gpio_0_0
      port map (
-      gpio2_io_i(11 downto 0) => main_0_adc_data_gpio_2(11 downto 0),
+      gpio2_io_i(11 downto 0) => NLW_axi_gpio_0_gpio2_io_i_UNCONNECTED(11 downto 0),
       gpio_io_i(11 downto 0) => main_0_adc_data_gpio_1(11 downto 0),
       s_axi_aclk => clk_wiz_0_clk_out1,
       s_axi_araddr(8 downto 0) => axi_smc_M00_AXI_ARADDR(8 downto 0),
@@ -471,7 +469,7 @@ ila_0: component Hilbert_242_ila_0_0
      port map (
       clk => clk_wiz_0_clk_out1,
       probe0(11 downto 0) => main_0_adc_data_gpio_1(11 downto 0),
-      probe1(11 downto 0) => main_0_adc_data_gpio_2(11 downto 0),
+      probe1(11 downto 0) => NLW_ila_0_probe1_UNCONNECTED(11 downto 0),
       probe2(0) => main_0_eoc_adc_int,
       probe3(7 downto 0) => \^jd\(7 downto 0),
       probe4(0) => \^led1_0\
@@ -481,7 +479,6 @@ main_0: component Hilbert_242_main_0_0
       Out_D(7 downto 0) => \^jd\(7 downto 0),
       Out_E(7 downto 0) => JE(7 downto 0),
       adc_data_gpio_1(11 downto 0) => main_0_adc_data_gpio_1(11 downto 0),
-      adc_data_gpio_2(11 downto 0) => main_0_adc_data_gpio_2(11 downto 0),
       btn => btn_0,
       clk => clk_wiz_0_clk_out1,
       eoc_adc_int => main_0_eoc_adc_int,
@@ -489,9 +486,7 @@ main_0: component Hilbert_242_main_0_0
       led2 => led2_0,
       switch1 => switch1_0,
       switch2 => switch2_0,
-      vauxn15 => vauxn15_0,
       vauxn7 => vauxn7_0,
-      vauxp15 => vauxp15_0,
       vauxp7 => vauxp7_0
     );
 processing_system7_0: component Hilbert_242_processing_system7_0_0
