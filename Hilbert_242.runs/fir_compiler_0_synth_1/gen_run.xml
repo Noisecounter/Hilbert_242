@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="fir_compiler_0_synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1761075948">
+<GenRun Id="fir_compiler_0_synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1761110767">
   <File Type="RDS-DCP" Name="fir_compiler_0.dcp"/>
   <File Type="RDS-RDS" Name="fir_compiler_0.vds"/>
   <File Type="REPORTS-TCL" Name="fir_compiler_0_reports.tcl"/>
@@ -9,7 +9,6 @@
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fir_compiler_0" RelGenDir="$PGENDIR/fir_compiler_0">
     <File Path="$PSRCDIR/sources_1/ip/fir_compiler_0/fir_compiler_0.xci">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -23,7 +22,6 @@
   <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fir_compiler_0" RelGenDir="$PGENDIR/fir_compiler_0">
     <File Path="$PSRCDIR/sources_1/ip/fir_compiler_0/fir_compiler_0.xci">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>

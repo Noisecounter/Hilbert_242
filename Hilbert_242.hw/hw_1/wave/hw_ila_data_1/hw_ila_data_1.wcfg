@@ -14,7 +14,7 @@
       <Cursor1Time time="0"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="202"></NameColumnWidth>
+      <NameColumnWidth column_width="194"></NameColumnWidth>
       <ValueColumnWidth column_width="60"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="14" />
@@ -89,26 +89,41 @@
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="Hilbert_242_i/NLW_ila_0_probe1_UNCONNECTED">
+      <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">Hilbert_242_i/NLW_ila_0_probe1_UNCONNECTED[11:0]</obj_property>
       <obj_property name="ObjectShortName">NLW_ila_0_probe1_UNCONNECTED[11:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="Hilbert_242_i/^jd">
+      <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">Hilbert_242_i/^jd[7:0]</obj_property>
       <obj_property name="ObjectShortName">^jd[7:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
    <wvobject type="logic" fp_name="Hilbert_242_i/^led1_0">
+      <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">Hilbert_242_i/^led1_0</obj_property>
       <obj_property name="ObjectShortName">^led1_0</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="Hilbert_242_i/main_0_adc_data_gpio_1">
+      <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">Hilbert_242_i/main_0_adc_data_gpio_1[11:0]</obj_property>
       <obj_property name="ObjectShortName">main_0_adc_data_gpio_1[11:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
    <wvobject type="logic" fp_name="Hilbert_242_i/main_0_eoc_adc_int">
+      <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">Hilbert_242_i/main_0_eoc_adc_int</obj_property>
       <obj_property name="ObjectShortName">main_0_eoc_adc_int</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
 </wave_config>

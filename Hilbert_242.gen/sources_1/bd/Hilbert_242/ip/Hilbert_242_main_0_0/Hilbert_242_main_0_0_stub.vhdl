@@ -2,7 +2,7 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
--- Date        : Tue Oct 21 23:50:26 2025
+-- Date        : Wed Oct 22 07:31:58 2025
 -- Host        : mike-NH5xAx running 64-bit Ubuntu 24.04.3 LTS
 -- Command     : write_vhdl -force -mode synth_stub
 --               /mnt/de61cc03-ca5c-4d86-98c7-744c0a68fa55/CAS_Mikroelektronik_Digital/Projekte/Hilbert_242/Hilbert_242.gen/sources_1/bd/Hilbert_242/ip/Hilbert_242_main_0_0/Hilbert_242_main_0_0_stub.vhdl

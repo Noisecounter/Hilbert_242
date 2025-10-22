@@ -287,6 +287,7 @@ BEGIN
 
     PROCESS (strb1, switch2, clk, btn) -- select LSB or USB and send audio data to DAC
         VARIABLE tempA, tempB : unsigned(15 DOWNTO 0);
+        VARIABLE tempC, tempD : unsigned(31 DOWNTO 0);
         VARIABLE ssb_data : unsigned(31 DOWNTO 0);
     BEGIN
         IF clk'event AND clk = '1' THEN
@@ -297,8 +298,12 @@ BEGIN
             ELSE
                 IF switch2 = '0' THEN
                     IF strb1 = '1' THEN
-                        dac_data_1 <= "101111111111";
-                        dac_data_2 <= "010101010101";
+                        tempA := unsigned(fir_data_1 (15 downto 0));
+                        tempB := unsigned(fir_data_2 (15 downto 0));
+                        tempC := (3 * tempA);
+                        tempD := (3 * tempB);
+                        dac_data_1 <= std_logic_vector (tempC (12 downto 1));
+                        dac_data_2 <= std_logic_vector (tempD (12 downto 1));
                         start <= strb1;
                     ELSE
                         dac_data_1 <= "000000000000";
